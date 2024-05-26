@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+        .container{
+            width: 90%;
+            margin: 1rem auto;
+            height: 90vh;
+            background-color: aqua;
+            border: 2px solid black;
+            display: flex;
+            flex-flow: row wrap;
+            /* justify-items: stretch;
+            align-items: stretch;
+            justify-content: center; */
+        }
+        .container-1-1{
+            display: flex;
+            flex-basis: 100%;
+            flex-flow: row wrap;
+        }
+        .container-1-2{
+            display: flex;
+            flex-basis: 100%;
+            flex-flow: row wrap;
+        }
+        .item{
+            color: white;
+            font-size: 2rem;
+            padding: 2rem;
+            flex: 1 0 100%;
+        }
+        .a {
+            background-color: blue;
+        }
+        .b {
+            background-color: rgb(0, 0, 0);
+        }
+        .c {
+            background-color: rgb(255, 30, 0);
+        }
+        .d {
+            background-color: rgb(162, 0, 255);
+        }
+        @media only screen and (min-width: 769px ) {
+        .container{
+            flex-flow: row wrap;
+        }
+        .container-1-1{
+            display: flex;
+            flex-basis: 60%;
+        }
+        .a {
+            background-color: blue;
+            flex-basis: 50%;
+        }
+        .b {
+            background-color: rgb(0, 0, 0);
+            flex-basis: 50%;
+        }
+        .container-1-2{
+            display: flex;
+            flex-basis: 40%;
+            flex-flow: column wrap;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="container-1-1">
+            <div class="item a">A</div>
+            <div class="item b">B</div>
+            <div class="item d">D</div>
+        </div>
+        <div class="container-1-2">
+            <div class="item c">C</div>
+        </div>
+    </section>
+</body>
+</html>

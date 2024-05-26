@@ -1,0 +1,51 @@
+/* medium device */
+@media (min-width:601px) and (max-width:900px) {
+    section{
+    padding: 50px 0px;
+}
+.container{
+    width: 90%;
+}
+.underline{
+    width: 15%;
+    margin: 10px auto;
+}
+.btn{
+    width: 150px;
+    font-size: 13px;
+}
+img{
+    max-width: 90%;
+}
+
+.box {
+    width: 50%;
+    padding: 20px;
+}
+.heading{
+    font-size: 25px;
+    line-height: 35px;
+}
+/* Navigation part  */
+
+.logo-part{
+    text-align: center;
+    width: 100%;
+}
+.menu-part{
+    width: 100%;
+    text-align: center;
+}
+.header-content{
+    height: 40vh;
+    width: 100%;
+padding: 30px 0px;
+}
+.header-content h1{
+    font-size: 25px;
+    line-height: 25px;
+}
+.icon-box i{
+    font-size: 13px;
+}
+}
